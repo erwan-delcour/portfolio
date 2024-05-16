@@ -1,8 +1,6 @@
-# Project Title
+# Portfolio
 
-A brief description of your project.
-
-## Table of Contents
+This is my portfolio. Here you can find my skills and projects.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -18,7 +16,7 @@ A brief description of your project.
   ```
   npm install
   ```
-  
+
 ## Usage
 To use my portfolio, follow these steps:
 
