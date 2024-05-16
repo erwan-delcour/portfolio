@@ -2,6 +2,8 @@
 
 This is my portfolio. Here you can find my skills and projects.
 
+## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
 
@@ -16,7 +18,7 @@ This is my portfolio. Here you can find my skills and projects.
   ```
   npm install
   ```
-
+  
 ## Usage
 To use my portfolio, follow these steps:
 
