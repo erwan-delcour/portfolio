@@ -30,7 +30,8 @@ function App() {
 
   return (
       <>
-      <Preloader load={load} /><div className="App" id={load ? "no-scroll" : "scroll"}>
+      <Preloader load={load} />
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
         <Routes>
