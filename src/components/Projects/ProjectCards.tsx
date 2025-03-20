@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { FaGitlab } from "react-icons/fa6";
 
 interface ProjectCardProps {
   imgPath: string;
@@ -10,6 +11,7 @@ interface ProjectCardProps {
   description: string;
   isBlog?: boolean;
   ghLink?: string;
+  gtLink?: string;
   demoLink?: string;
 }
 
@@ -28,6 +30,17 @@ function ProjectCards(props: ProjectCardProps): React.ReactElement {
             {props.isBlog ? "Blog" : "GitHub"}
           </Button>
         )}
+        {props.gtLink && (
+          <Button 
+            variant="primary" 
+            href={props.gtLink} 
+            target="_blank"
+            style={{ marginLeft: props.ghLink ? "10px" : "0px" }}
+          >
+            <FaGitlab /> &nbsp;
+            {"GitLab"}
+          </Button>
+        )}
         {"\n"}
         {"\n"}
 
@@ -36,7 +49,7 @@ function ProjectCards(props: ProjectCardProps): React.ReactElement {
             variant="primary"
             href={props.demoLink}
             target="_blank"
-            style={{ marginLeft: props.ghLink ? "10px" : "0px" }}
+            style={{ marginLeft: (props.ghLink || props.gtLink) ? "10px" : "0px" }}
           >
             <CgWebsite /> &nbsp;
             {"Demo"}
