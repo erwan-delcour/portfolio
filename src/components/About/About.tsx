@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
@@ -7,7 +7,7 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
-function About() {
+function About(): React.ReactElement {
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -37,14 +37,11 @@ function About() {
         <h1 className="project-heading">
           Compétences <strong className="purple">professionnelles</strong>
         </h1>
-
         <Techstack />
-
         <h1 className="project-heading">
           <strong className="purple">Les outils </strong> que j'utilise
         </h1>
         <Toolstack />
-
         <Github />
       </Container>
     </Container>

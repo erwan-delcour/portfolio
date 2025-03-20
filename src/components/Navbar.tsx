@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import * as React from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -13,15 +14,14 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
 
-function NavBar() {
+function NavBar(): React.ReactElement {
   const navigate = useNavigate();
-  const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  const [expand, updateExpanded] = useState<boolean | string>(false);
+  const [navColour, updateNavbar] = useState<boolean>(false);
 
-  function scrollHandler() {
+  function scrollHandler(): void {
     if (window.scrollY >= 20) {
       updateNavbar(true);
     } else {
@@ -33,7 +33,7 @@ function NavBar() {
 
   return (
     <Navbar
-      expanded={expand}
+      expanded={expand as boolean}
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
@@ -59,7 +59,6 @@ function NavBar() {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Accueil
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -69,7 +68,6 @@ function NavBar() {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> A Propos
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -82,7 +80,6 @@ function NavBar() {
                 Projets
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -92,7 +89,6 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Mon CV
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/erwan-delcour/portfolio/"

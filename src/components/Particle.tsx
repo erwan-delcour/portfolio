@@ -1,7 +1,7 @@
-import React from "react";
+import * as React from "react";
 import Particles from "react-tsparticles";
 
-function Particle() {
+function Particle(): React.ReactElement {
   return (
     <Particles
       id="tsparticles"

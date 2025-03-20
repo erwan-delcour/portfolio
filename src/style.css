@@ -563,6 +563,37 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+  width: 11rem !important;  /* Largeur doublée */
+  height: 11rem !important; /* Hauteur doublée */
+  flex: 0 0 auto !important;
+  transform: none !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.tool-icons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+  width: 5.5rem !important;  
+  height: 5.5rem !important; 
+  flex: 0 0 auto !important;
+  transform: none !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
 }
 
 @media (max-width: 767px) {
@@ -572,13 +603,28 @@ button:focus {
 }
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
+  transform: none !important; /* Désactiver toute transformation au survol */
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+
+.tool-icons:hover {
+  transform: none !important; /* Désactiver toute transformation au survol */
+  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
+}
+
+.tech-icons img,
+.tool-icons img,
+.tech-icons svg,
+.tool-icons svg {
+  max-width: 80% !important;
+  max-height: 80% !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
 
 .quote-card-view {
@@ -598,6 +644,21 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
+.tech-stack-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start !important; /* Aligner en haut pour éviter les étirements */
+}
+
+.tool-stack-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start !important; /* Aligner en haut pour éviter les étirements */
+}
+
 /* --------- */
 /* Resume */
 /* --------- */

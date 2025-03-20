@@ -1,11 +1,11 @@
-import React from "react";
+import * as React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import site from "../../Assets/Projects/site.png";
 
-function Projects() {
+function Projects(): React.ReactElement {
   return (
     <Container fluid className="project-section">
       <Particle />

@@ -1,15 +1,11 @@
-import React from "react";
+import * as React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function Home2() {
+function Home2(): React.ReactElement {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -21,15 +17,15 @@ function Home2() {
             <p className="home-about-body">
               Passionné par les technologies innovantes, je suis développeur et architecte spécialisé dans le développement de solutions logicielles.
               <br />
-              <br />Les langages de programmation dont je suis familier sont{" "}
+              <br />Les langages de programmation que je maitrise le plus sont{" "}
               <i>
-                <b className="purple"> Javascript / Typescript, Python et Java.</b>
+                <b className="purple"> Java, Javascript / Typescript et Python.</b>
               </i>
               <br />
               <br />
-              Bien que je sois familier avec plusieurs langages, la création de sites et d'applications &nbsp;
+              Bien que je sois familier avec la création de sites et d'applications, j'apprécie particulièrement de participer&nbsp;
               <i>
-                <b className="purple">avec les outils Node </b> reste ma préférence.
+                <b className="purple">à leur architecture et à leur déploiement</b>
               </i>
               <br />
               <br />
@@ -75,4 +71,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

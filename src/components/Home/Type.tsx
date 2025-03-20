@@ -1,12 +1,12 @@
-import React from "react";
+import * as React from "react";
 import Typewriter from "typewriter-effect";
 
-function Type() {
+function Type(): React.ReactElement {
   return (
     <Typewriter
       options={{
         strings: [
-          "Developpeur",
+          "Developpeur Full-Stack",
           "Architecte logiciel",
         ],
         autoStart: true,
