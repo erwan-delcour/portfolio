@@ -25,7 +25,7 @@ function Projects(): React.ReactElement {
               title="Portfolio"
               description="Portfolio personnel, présentant qui je suis, mes compétences et mes projets. Il a été réalisé avec React Typescript."
               ghLink="https://github.com/erwan-delcour/portfolio"
-              demoLink="https://erwan-delcour.github.io/portfolio/"
+              demoLink="https://www.portfolio.erwandelcour.fr/"
             />
           </Col>
           <Col md={4} className="project-card">
