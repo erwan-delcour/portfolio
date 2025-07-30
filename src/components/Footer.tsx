@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillGitlab } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer(): React.ReactElement {
@@ -35,6 +35,16 @@ function Footer(): React.ReactElement {
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://gitlab.com/erwan-delcour"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AiFillGitlab />
               </a>
             </li>
           </ul>

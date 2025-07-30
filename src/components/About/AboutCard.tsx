@@ -13,7 +13,7 @@ function AboutCard(): React.ReactElement {
             <br />
             Je travaille actuellement chez Sanef en alternance, en tant qu'analyste developpeur.
             <br />
-            En parallèle, je suis entrain de passer mon master Architecture des Logiciels à l'ESGI Paris.
+            Je suis actuellement à la recherche d'un poste de développeur fullstack, suite à la fin de mon master.
             <br />
             <br />
             A part le développement, j'aime aussi faire des activités comme :

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillGitlab } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2(): React.ReactElement {
@@ -19,7 +19,7 @@ function Home2(): React.ReactElement {
               <br />
               <br />Les langages de programmation que je maitrise le plus sont{" "}
               <i>
-                <b className="purple"> Java, Javascript / Typescript et Python.</b>
+                <b className="purple"> Javascript / Typescript, Flutter, Java et Python.</b>
               </i>
               <br />
               <br />
@@ -62,6 +62,16 @@ function Home2(): React.ReactElement {
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://gitlab.com/erwan-delcour"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGitlab />
                 </a>
               </li>
             </ul>
